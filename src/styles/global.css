@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root,
+	:root[data-theme="light"] {
+		color-scheme: light;
+		/* https://tailwindcss.com/docs/customizing-colors#using-css-variables */
+		--theme-bg: 0deg 0% 95%;
+		--theme-link: 192deg 35% 47%;
+		--theme-text: 209deg 5% 38%;
+		--theme-accent: 192deg 35% 47%;
+		--theme-accent-2: 202deg 7% 16%;
+		--theme-quote: 216deg 5% 60%;
+	}
+
+	:root[data-theme="dark"] {
+		color-scheme: dark;
+		--theme-bg: 202deg 7% 16%;
+		--theme-link: 192deg 35% 47%;
+		--theme-text: 216deg 5% 65%;
+		--theme-accent: 192deg 35% 47%;
+		--theme-accent-2: 0deg 0% 95%;
+		--theme-quote: 209deg 5% 38%;
+	}
+}
